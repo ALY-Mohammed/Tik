@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <Button
+        android:id="@+id/title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcom to game"
+        android:textSize="28sp"
+        android:background="@color/purple_500"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="80dp"
+
+        />
+
+    <LinearLayout
+        android:id="@+id/layoutOne"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/title_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="30dp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="player1"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="20dp"
+                android:textSize="40sp"
+
+
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="player2"
+                android:textSize="40sp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="70dp"
+
+
+                />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_margin="10px"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+
+
+
+
+            <RadioGroup
+                android:id="@+id/XO_radio_group1"
+                android:layout_width="1dp"
+                android:layout_height="200dp"
+                android:layout_weight="3"
+                android:layout_marginLeft="40dp"
+
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/X_radio_btn1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="10dp"
+                    android:text="X"
+                    android:layout_marginLeft="-5dp"
+                    android:textSize="30dp"
+                    android:textColor="@color/purple_500" />
+
+                <RadioButton
+                    android:id="@+id/O_radio_btn1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="30dp"
+
+                    android:text="O"
+                    android:textColor="#FF0026" />
+
+            </RadioGroup>
+
+
+
+            <RadioGroup
+                android:id="@+id/xo_radio_group2"
+                android:layout_width="1dp"
+                android:layout_height="200dp"
+                android:layout_weight="3"
+
+
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/X_radio_btn2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="10dp"
+                    android:text="X"
+                    android:textSize="30dp"
+                    android:textColor="@color/teal_200" />
+
+                <RadioButton
+                    android:id="@+id/O_radio_btn2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="30dp"
+                    android:text="O"
+                    android:textColor="@color/teal_200" />
+
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layoutTwo2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:layout_marginTop="0dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/layoutOne"
+        >
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+
+
+            >
+            <EditText
+                android:id="@+id/input1"
+                android:layout_width="150dp"
+                android:layout_height="65dp"
+                android:background="#66DAE2E8"
+                android:hint=" Name"
+                android:layout_marginLeft="35dp"
+                android:padding="20dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#0000ff"
+
+                />
+            <EditText
+                android:id="@+id/input2"
+                android:layout_width="150dp"
+                android:layout_height="65dp"
+                android:layout_marginLeft="50dp"
+                android:background="#66DAE2E8"
+                android:hint=" Name"
+                android:padding="20dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#0000ff" />
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/start_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#935503"
+        android:text="Start"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layoutTwo2"
+        android:layout_marginTop="30dp"
+         />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
