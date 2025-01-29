@@ -201,13 +201,13 @@
         android:id="@+id/start_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="#935503"
+        android:backgroundTint="#930319"
         android:text="Start"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/layoutTwo2"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="40dp"
          />
 
 
